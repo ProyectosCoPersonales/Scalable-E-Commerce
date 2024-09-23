@@ -1,6 +1,5 @@
 # Scalable-E-Commerce
 
-![image](https://github.com/user-attachments/assets/3f2ca9bb-2c16-4d04-8685-113782ce6b02)
 ![image](https://github.com/user-attachments/assets/8d5e3021-29f5-400a-bfb8-a15f636ffc19)
 
 
