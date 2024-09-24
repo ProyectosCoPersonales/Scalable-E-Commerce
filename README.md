@@ -1,5 +1,7 @@
 # SCALABLE-E-COMMERCE IN SPRING
 
+This project was proposed by Roadmap.sh: https://roadmap.sh/projects/scalable-ecommerce-platform
+
 This backend was developed using **Spring Framework**, with **JWT** and **Spring Security** for security. **PayPal** was integrated for payments, **Twilio** for SMS, and **Java Mail Sender** for emails. Thymeleaf was used to visualize the payment process.
 ### DEPLOYMENT
 ```
