@@ -2,6 +2,9 @@
 
 This backend was developed using **Spring Framework**, with **JWT** and **Spring Security** for security. **PayPal** was integrated for payments, **Twilio** for SMS, and **Java Mail Sender** for emails. Thymeleaf was used to visualize the payment process.
 
+![image](https://github.com/user-attachments/assets/f59c1641-9592-4506-9883-38a7fedf9c2d)
+
+
 <img src="https://github.com/user-attachments/assets/8d5e3021-29f5-400a-bfb8-a15f636ffc19" alt="Descripción de la imagen" style="width: 600px; height: auto;">
 
 ## TEST
