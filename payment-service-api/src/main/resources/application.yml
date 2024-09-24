@@ -1,0 +1,16 @@
+
+server:
+  port: 8084
+spring:
+  application:
+    name: payment-service-api
+
+paypal:
+  client-id:
+  client-secret:
+  mode: sandbox    
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-service-api:8761/eureka/

@@ -1,0 +1,116 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql_docker
+    environment:
+      MYSQL_ROOT_USERNAME: root
+      MYSQL_ROOT_PASSWORD: 41567HOLA
+      MYSQL_DATABASE: e-commerce
+    ports:
+      - "3307:3306"
+    networks:
+      - spring-network
+    volumes:
+      - mysql-volume:/var/lib/mysql
+
+  eureka-service-api:
+    build:
+      context: ./eureka-service-api
+      dockerfile: Dockerfile
+    container_name: eureka-service-api
+    ports:
+      - "8761:8761"
+    networks:
+      - spring-network
+
+  gateway-service-api:
+    build:
+      context: ./gateway-service-api
+    container_name: gateway-service-api
+    ports:
+      - "8090:8090"
+    networks:
+      - spring-network
+    depends_on:
+      - mysql
+      - eureka-service-api
+
+  user-service-api:
+    build:
+      context: ./user-service-api
+    container_name: user-service-api
+    ports:
+      - "8081:8081"
+    networks:
+      - spring-network
+    depends_on:
+      - mysql
+      - eureka-service-api
+      - gateway-service-api
+  shopping-service-api:
+    build:
+      context: ./shopping-service-api
+    container_name: shopping-service-api
+    ports:
+      - "8082:8082"
+    networks:
+      - spring-network
+    depends_on:
+      - mysql
+      - eureka-service-api
+      - gateway-service-api
+  product-service-api:
+    build:
+      context: ./product-service-api
+    container_name: product-service-api
+    ports:
+      - "8083:8083"
+    networks:
+      - spring-network
+    depends_on:
+      - mysql
+      - eureka-service-api
+      - gateway-service-api
+
+  payment-service-api:
+    build:
+      context: ./payment-service-api
+    container_name: payment-service-api
+    ports:
+      - "8084:8084"
+    networks:
+      - spring-network
+    depends_on:
+      - mysql
+      - eureka-service-api
+      - gateway-service-api
+  order-service-api:
+    build:
+      context: ./order-service-api
+    container_name: order-service-api
+    ports:
+      - "8085:8085"
+    networks:
+      - spring-network
+    depends_on:
+      - mysql
+      - eureka-service-api
+      - gateway-service-api
+  notification-service-api:
+    build:
+      context: ./notification-service-api
+    container_name: notification-service-api
+    ports:
+      - "8086:8086"
+    networks:
+      - spring-network
+    depends_on:
+      - mysql
+      - eureka-service-api
+      - gateway-service-api
+networks:
+  spring-network:
+    driver: bridge
+
+volumes:
+  mysql-volume:

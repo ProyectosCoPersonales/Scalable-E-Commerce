@@ -1,0 +1,47 @@
+
+server:
+  port: 8090
+spring:
+  application:
+    name: gateway-service-api
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: user-service-api
+          uri: lb://USER-SERVICE-API
+          predicates:
+            - Path=/api/users/**
+            - Path=/api/auth/**
+
+
+        - id: shopping-service-api
+          uri: lb://SHOPPING-SERVICE-API
+          predicates:
+            - Path=/api/shopping/**
+
+
+        - id: product-service-api
+          uri: lb://PRODUCT-SERVICE-API
+          predicates:
+            - Path=/api/product/**
+
+
+        - id: order-service-api
+          uri: lb://ORDER-SERVICE-API
+          predicates:
+            - Path=/api/orders/**
+
+
+        - id: notification-service-api
+          uri: lb://NOTIFICATION-SERVICE-API
+          predicates:
+            - Path=/api/notifications/**
+        
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-service-api:8761/eureka/

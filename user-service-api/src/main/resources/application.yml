@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: user-service-api
+  datasource:
+    url: jdbc:mysql://mysql_docker:3306/e-commerce
+    username: root
+    password: 41567HOLA
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: 3E3U3HR23GR627GR27723RY23IJR923R2379HRRJK934
+  expiration: 604800000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-service-api:8761/eureka/

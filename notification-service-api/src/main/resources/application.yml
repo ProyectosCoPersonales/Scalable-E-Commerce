@@ -1,0 +1,39 @@
+server:  
+  port: 8086  
+
+spring:  
+  application:  
+    name: notification-service-api
+
+  datasource:  
+    url: jdbc:mysql://mysql_docker:3306/e-commerce
+    username: root
+    password: 41567HOLA
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:  
+    hibernate:  
+      ddl-auto: update  
+    show-sql: true  
+
+  mail:  
+    host: smtp.gmail.com  
+    port: 587  
+    username: 
+    password: 
+    properties:  
+      mail:  
+        smtp:  
+          auth: true  
+          starttls:  
+            enable: true
+            
+twilio:  
+  account-sid: 
+  auth-token: 
+  from-number: 
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-service-api:8761/eureka/

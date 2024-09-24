@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --background-color: #f4f4f4;
+            --card-background: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-background);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .section {
+            background-color: var(--card-background);
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .total {
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .pay-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .pay-button:hover {
+            background-color: #2ecc71;
+        }
+
+        .payment-form {
+            margin-top: 30px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+
+        .payment-form h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .payment-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .payment-form input,
+        .payment-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .payment-form button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .payment-form button:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            table,
+            th,
+            td {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Order Details</h1>
+
+        <div class="section">
+            <h2>Order Information</h2>
+            <p><strong>Order ID:</strong> <span th:text="${order.orderId}"></span></p>
+            <p><strong>Order Status:</strong> <span th:text="${order.orderStatus}"></span></p>
+            <p><strong>Order Date:</strong> <span
+                    th:text="${#temporals.format(order.orderDate, 'yyyy-MM-dd HH:mm')}"></span></p>
+        </div>
+
+        <div class="section">
+            <h2>Customer Information</h2>
+            <p><strong>Name:</strong> <span th:text="${order.name}"></span></p>
+            <p><strong>Email:</strong> <span th:text="${order.email}"></span></p>
+            <p><strong>Address:</strong> <span th:text="${order.address}"></span></p>
+            <p><strong>Phone:</strong> <span th:text="${order.phone}"></span></p>
+        </div>
+
+        <div class="section">
+            <h2>Order Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="item : ${order.items}">
+                        <td th:text="${item.idProduct}"></td>
+                        <td th:text="${item.nameProduct}"></td>
+                        <td th:text="${item.quantity}"></td>
+                        <td th:text="${#numbers.formatDecimal(item.unitPrice, 1, 2)}"></td>
+                        <td th:text="${#numbers.formatDecimal(item.totalPrice, 1, 2)}"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="total">Total Amount: $<span th:text="${#numbers.formatDecimal(order.totalAmount, 1, 2)}"></span>
+            </p>
+        </div>
+        <div class="payment-form">
+            <h2>Payment</h2>
+            <form action="/payment/create" method="post">
+                <label for="name">Order Id:</label>
+                <input type="text" id="orderid" name="orderid" th:value="${order.orderId}" readonly>
+                <label for="method">Payment Method:</label>
+                <input type="text" id="method" name="method" value="PayPal" readonly>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount"
+                    th:value="${order.totalAmount}" readonly>
+                <label for="currency">Currency:</label>
+                <select id="currency" name="currency">
+                    <option value="USD" selected>USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" value="Compra de inmuebles" readonly>
+                <button type="submit">Proceed to Payment</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
