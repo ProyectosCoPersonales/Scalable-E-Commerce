@@ -1,4 +1,4 @@
-# SCALABLE-E-COMMERCE
+# SCALABLE-E-COMMERCE IN SPRING
 
 ![image](https://github.com/user-attachments/assets/400b0ecc-d217-45da-bdd5-114b42169dc1)
 
