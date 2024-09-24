@@ -2,10 +2,6 @@
 
 This project was proposed by Roadmap.sh: https://roadmap.sh/projects/scalable-ecommerce-platform
 
-If we reach the goal of 10 likes, I'll do the frontend with Angular :) 
-
-![image](https://github.com/user-attachments/assets/bd9f9091-9266-424d-8f5d-42a34f320079)
-
 
 This backend was developed using **Spring Framework**, with **JWT** and **Spring Security** for security. **PayPal** was integrated for payments, **Twilio** for SMS, and **Java Mail Sender** for emails. Thymeleaf was used to visualize the payment process.
 ### DEPLOYMENT
