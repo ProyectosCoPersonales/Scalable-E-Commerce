@@ -1,5 +1,7 @@
 # SCALABLE-E-COMMERCE IN SPRING
 
+This backend was developed using **Spring Framework**, with **JWT** and **Spring Security** for security. **PayPal** was integrated for payments, **Twilio** for SMS, and **Java Mail Sender** for emails.
+
 ![image](https://github.com/user-attachments/assets/400b0ecc-d217-45da-bdd5-114b42169dc1)
 
 
