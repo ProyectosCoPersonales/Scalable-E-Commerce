@@ -10,16 +10,17 @@ This backend was developed using **Spring Framework**, with **JWT** and **Spring
 
 <img src="https://github.com/user-attachments/assets/1f077f92-1042-41d3-941b-1742a70f6746" alt="Descripción de la imagen" style="width: 700px; height: auto;">
 
+<img src="https://github.com/user-attachments/assets/1f077f92-1042-41d3-941b-1742a70f6746" alt="Descripción de la imagen" style="width: 700px; height: auto;">
 
-![image](https://github.com/user-attachments/assets/1f077f92-1042-41d3-941b-1742a70f6746)
 
 ### LOGIN (IT IS VERIFIED IF YOU ARE A USER OR ADMIN THROUGH THE TOKEN)
 
-![image](https://github.com/user-attachments/assets/afe7c915-4d19-41f6-bff7-58adaf3312a3)
+<img src="https://github.com/user-attachments/assets/afe7c915-4d19-41f6-bff7-58adaf3312a3" alt="Descripción de la imagen" style="width: 700px; height: auto;">
 
 ### ADMIN: ADD PRODUCTS TO THE DATABASE
 
-![image](https://github.com/user-attachments/assets/9aa81dee-383d-4f9c-a0bf-3d8631b71ddf)
+
+<img src="https://github.com/user-attachments/assets/9aa81dee-383d-4f9c-a0bf-3d8631b71ddf" alt="Descripción de la imagen" style="width: 700px; height: auto;">
 
 ### CLIENT: BUYING
 ### START OF PURCHASE
