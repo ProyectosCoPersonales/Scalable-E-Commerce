@@ -188,3 +188,7 @@
 
 ![image](https://github.com/user-attachments/assets/79336c6b-9eff-449b-9e3c-7a2014980f8f)
 
+### THE ADMINISTRATOR'S FUNCTIONS WOULD BE TO BE ABLE TO SEE THE ORDER HISTORY OF ALL USERS AND THINGS LIKE THAT
+### IF I DO IT AS A CUSTOMER IT DOES NOT ALLOW
+
+![image](https://github.com/user-attachments/assets/026452ef-11aa-43e4-8427-0dfd6695815f)
