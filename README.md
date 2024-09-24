@@ -1,5 +1,8 @@
 # SCALABLE-E-COMMERCE
 
+![image](https://github.com/user-attachments/assets/400b0ecc-d217-45da-bdd5-114b42169dc1)
+
+
 ![image](https://github.com/user-attachments/assets/8d5e3021-29f5-400a-bfb8-a15f636ffc19)
 
 ## TEST
