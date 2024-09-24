@@ -4,6 +4,9 @@ This backend was developed using **Spring Framework**, with **JWT** and **Spring
 
 ![image](https://github.com/user-attachments/assets/f59c1641-9592-4506-9883-38a7fedf9c2d)
 
+Para proceder con el despliegue, necesitamos tres elementos: las credenciales de PayPal.
+
+![image](https://github.com/user-attachments/assets/e5ef64d6-4227-4021-b4d0-9af348f2fa76)
 
 <img src="https://github.com/user-attachments/assets/8d5e3021-29f5-400a-bfb8-a15f636ffc19" alt="Descripción de la imagen" style="width: 600px; height: auto;">
 
