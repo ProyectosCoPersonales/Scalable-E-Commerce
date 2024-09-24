@@ -176,7 +176,7 @@
     "orderDate": "2024-09-24T00:38:03.912451144"
 }
 ```
-
+### THE PAYMENT PROCESS IS THE ONLY ONE WITH INTERFACE
 ![image](https://github.com/user-attachments/assets/49000bac-3bed-4196-af07-55bb09dcb0d9)
 
 ### PAYING
