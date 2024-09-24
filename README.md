@@ -1,16 +1,16 @@
 # SCALABLE-E-COMMERCE IN SPRING
 
 This backend was developed using **Spring Framework**, with **JWT** and **Spring Security** for security. **PayPal** was integrated for payments, **Twilio** for SMS, and **Java Mail Sender** for emails. Thymeleaf was used to visualize the payment process.
-
-
+```
+docker compose up --build
+```
 
 ![image](https://github.com/user-attachments/assets/f59c1641-9592-4506-9883-38a7fedf9c2d)
 
-Para proceder con el despliegue, necesitamos tres elementos: las credenciales de PayPal.
+### To proceed with the deployment, we need three items: PayPal credentials, Twilio credentials, and Gmail credentials.
 
 <img src="https://github.com/user-attachments/assets/e5ef64d6-4227-4021-b4d0-9af348f2fa76" alt="Descripción de la imagen" style="width: 500px; height: auto;">
 
-Las de twilio y Gmail
 
 <img src="https://github.com/user-attachments/assets/a2a0fbb8-8603-4b7a-a158-04dd9695dfc9" alt="Descripción de la imagen" style="width: 500px; height: auto;">
 
