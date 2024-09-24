@@ -8,6 +8,9 @@ This backend was developed using **Spring Framework**, with **JWT** and **Spring
 
 ### REGISTER CUSTOMER AND ADMIN 
 
+<img src="https://github.com/user-attachments/assets/1f077f92-1042-41d3-941b-1742a70f6746" alt="Descripción de la imagen" style="width: 300px; height: auto;">
+
+
 ![image](https://github.com/user-attachments/assets/1f077f92-1042-41d3-941b-1742a70f6746)
 
 ### LOGIN (IT IS VERIFIED IF YOU ARE A USER OR ADMIN THROUGH THE TOKEN)
