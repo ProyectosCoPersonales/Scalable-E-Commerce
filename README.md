@@ -25,12 +25,12 @@ This backend was developed using **Spring Framework**, with **JWT** and **Spring
 ### CLIENT: BUYING
 ### START OF PURCHASE
 
-![image](https://github.com/user-attachments/assets/1f20b1bb-9dd8-44d1-b1ae-b35bf867714b)
+<img src="https://github.com/user-attachments/assets/1f20b1bb-9dd8-44d1-b1ae-b35bf867714b" alt="Descripción de la imagen" style="width: 700px; height: auto;">
 
 ### END OF PURCHASE PLEASE NOTE THAT IF THE STOCK IS EXCEEDED, YOUR REQUEST WILL BE REJECTED
 ### CAN ALSO BE REMOVED
 
-![image](https://github.com/user-attachments/assets/c774754a-7d4c-46b1-accf-c89eecad47bc)
+<img src="https://github.com/user-attachments/assets/c774754a-7d4c-46b1-accf-c89eecad47bc" alt="Descripción de la imagen" style="width: 700px; height: auto;">
 
 ```json
 {
@@ -100,7 +100,7 @@ This backend was developed using **Spring Framework**, with **JWT** and **Spring
 ```
 ### CUSTOMER: IT SHOULD BE GENERATED AUTOMATICALLY BUT HERE I DO IT MANUALLY OK
 
-![image](https://github.com/user-attachments/assets/0b14ccdb-7e72-4393-b5a8-cd01b2b7f272)
+<img src="https://github.com/user-attachments/assets/0b14ccdb-7e72-4393-b5a8-cd01b2b7f272" alt="Descripción de la imagen" style="width: 700px; height: auto;">
 
 ```json
 {
@@ -183,18 +183,18 @@ This backend was developed using **Spring Framework**, with **JWT** and **Spring
 }
 ```
 ### THE PAYMENT PROCESS IS THE ONLY ONE WITH INTERFACE
-![image](https://github.com/user-attachments/assets/49000bac-3bed-4196-af07-55bb09dcb0d9)
+<img src="https://github.com/user-attachments/assets/49000bac-3bed-4196-af07-55bb09dcb0d9" alt="Descripción de la imagen" style="width: 700px; height: auto;">
 
 ### PAYING
 
-![image](https://github.com/user-attachments/assets/6ee6a615-dd61-47aa-a9e8-135a6f48640e)
-![image](https://github.com/user-attachments/assets/d98a0d3a-c883-42ed-a1a9-bc186e1be463)
+<img src="https://github.com/user-attachments/assets/6ee6a615-dd61-47aa-a9e8-135a6f48640e" alt="Descripción de la imagen" style="width: 700px; height: auto;">
+<img src="https://github.com/user-attachments/assets/d98a0d3a-c883-42ed-a1a9-bc186e1be463" alt="Descripción de la imagen" style="width: 700px; height: auto;">
 
 ### RECEIVING SUCCESSFUL PAYMENT EMAIL
 
-![image](https://github.com/user-attachments/assets/79336c6b-9eff-449b-9e3c-7a2014980f8f)
+<img src="https://github.com/user-attachments/assets/79336c6b-9eff-449b-9e3c-7a2014980f8f" alt="Descripción de la imagen" style="width: 700px; height: auto;">
 
 ### THE ADMINISTRATOR'S FUNCTIONS WOULD BE TO BE ABLE TO SEE THE ORDER HISTORY OF ALL USERS AND THINGS LIKE THAT
 ### IF I DO IT AS A CUSTOMER IT DOES NOT ALLOW
 
-![image](https://github.com/user-attachments/assets/026452ef-11aa-43e4-8427-0dfd6695815f)
+<img src="https://github.com/user-attachments/assets/026452ef-11aa-43e4-8427-0dfd6695815f" alt="Descripción de la imagen" style="width: 700px; height: auto;">
